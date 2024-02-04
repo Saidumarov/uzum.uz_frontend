@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import uzm1 from "../../assets/icons/savg/uzm1.svg";
 import uzm from "../../assets/icons/savg/uzm.svg";
 import katalog from "../../assets/icons/savg/kat.svg";
@@ -6,8 +6,6 @@ import kirish from "../../assets/icons/savg/odam.svg";
 import layk from "../../assets/icons/savg/like.svg";
 import savat from "../../assets/icons/savg/savatt.svg";
 import savat1 from "../../assets/icons/savg/savat.svg";
-import bara from "../../assets/icons/savg/bar.svg";
-import barax from "../../assets/icons/savg/barx.svg";
 import passImg from "../../assets/icons/savg/pas.svg";
 import joy from "../../assets/icons/savg/joy.svg";
 import xar from "../../assets/icons/savg/xarita.svg";

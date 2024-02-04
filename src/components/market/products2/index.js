@@ -4,7 +4,7 @@ import Loadindata from "../../loading/loadingdata";
 const ProductsAll = (product) => {
   const [isLoading1, setIsLoading1] = useState(false);
   const [visibleItems, setVisibleItems] = useState(20);
-  const { dataResponse, error, isError, isLoading } = product?.products;
+  const { dataResponse, isLoading } = product?.products;
   const loadMoreItems = () => {
     setIsLoading1(true);
     setTimeout(() => {

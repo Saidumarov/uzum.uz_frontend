@@ -1,7 +1,6 @@
 import React from "react";
 import img from "../../assets/icons/savg/joy.svg";
 import uz from "../../assets/icons/savg/uz.svg";
-import Ads from "../ads";
 const Nav = () => {
   return (
     <div className="wrapper">

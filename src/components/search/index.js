@@ -14,12 +14,7 @@ function Search() {
     const response = await myAxios.get("product");
     return response?.data;
   };
-  const {
-    data: dataResponse,
-    isLoading,
-    isError,
-    error,
-  } = useQuery("posts", fetchPost);
+  const { data: dataResponse } = useQuery("posts", fetchPost);
 
   useEffect(() => {
     setFilter(dataResponse);

@@ -12,7 +12,7 @@ import img9 from "../../assets/imgs/sledrImgs/yogg.jpg";
 import img10 from "../../assets/imgs/sledrImgs/futa.jpg";
 
 const Scroldata = (product) => {
-  const { dataResponse, error, isError, isLoading } = product?.products;
+  const { isLoading } = product?.products;
   const [delayedData, setDelayedData] = useState();
   const [screenWidth, setScreenWidth] = useState(
     window.innerWidth || document.documentElement.clientWidth

@@ -11,8 +11,7 @@ import mac from "../../assets/icons/savg/mac.svg";
 import go from "../../assets/icons/savg/go.svg";
 import pas from "../../assets/icons/savg/pas.svg";
 import "../../styles/footer.css";
-import { Link, useNavigate } from "react-router-dom";
-import UserPage from "../../pages/UserPage";
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
   const [isActive, setIsActive] = useState(false);
   const [isActive1, setIsActive1] = useState(false);

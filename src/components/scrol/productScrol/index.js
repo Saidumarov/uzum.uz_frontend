@@ -5,7 +5,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import ProductCard from "../../market/products/product-card";
 function ProductScrol(product) {
-  const { dataResponse, error, isError, isLoading } = product?.products;
+  const { dataResponse, isLoading } = product?.products;
 
   return (
     <>

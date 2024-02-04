@@ -21,7 +21,7 @@ const AboutCards = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [imgs, setImgs] = useState([]);
   const [btn, setBtn] = useState(true);
-  const { setHig, fixed, setFixed, setLegth } = useContext(Modal);
+  const { setHig, setFixed, setLegth } = useContext(Modal);
   const [styl, setStyl] = useState(
     localStorage.getItem(`styl-${id}`) || "scale(1)"
   );

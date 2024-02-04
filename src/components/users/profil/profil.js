@@ -12,7 +12,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 function Profil() {
-  const apiUrl = process.env.REACT_APP_API_URL;
   const {
     isupdate,
     setIsUpdate,

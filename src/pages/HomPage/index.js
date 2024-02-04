@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Loadindata, Products, Scroldata } from "../../components";
+import { Products, Scroldata } from "../../components";
 import { Modal } from "../../components/modalProvider";
 import myAxios from "../../api/index";
 import { useQuery } from "react-query";
 import "../../styles/sass/notFound.scss";
 function Hompage() {
   const { setSet, setFixed, setActiveItem } = useContext(Modal);
-  const [eror, setEror] = useState(false);
+  // const [eror, setEror] = useState(false);
   const [eror1, setEror1] = useState(true);
 
   useEffect(() => {

@@ -20,7 +20,7 @@ const ProductCard = ({
     localStorage.getItem(`styl-${_id}`) || "scale(1)"
   );
   const [bloc, setBloc] = useState(localStorage.getItem(`bloc-${_id}`) || "");
-  const { length, setLegth } = useContext(Modal);
+  const { setLegth } = useContext(Modal);
   const [dot, setDot] = useState(false);
   useEffect(() => {
     localStorage.setItem(`styl-${_id}`, styl);

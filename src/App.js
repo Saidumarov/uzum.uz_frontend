@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
@@ -15,7 +15,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React sdsds Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Adipisci suscipit distinctio eius quae nisi? Accusamus omnis
+          esse animi rerum explicabo!
         </a>
       </header>
     </div>

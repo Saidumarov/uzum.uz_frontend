@@ -1,10 +1,10 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { Nav, NavItem, Sitebar } from "../../components";
 import "../../styles/nav.css";
 import FixedHeader from "../../components/fixed-header";
 import { Modal } from "../../components/modalProvider";
 function NavPage() {
-  const { fixed, setFixed } = useContext(Modal);
+  const { fixed } = useContext(Modal);
 
   return (
     <div>

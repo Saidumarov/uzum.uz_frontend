@@ -1,0 +1,431 @@
+@font-face {
+  font-family: Roboto;
+  src: url("././../../../src/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+.mah {
+  position: absolute;
+  width: 100%;
+  padding-top: 40px;
+  font-size: 30px;
+  font-family: Roboto;
+  span {
+    opacity: 0.7;
+  }
+}
+.delet,
+.add {
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.349);
+  position: absolute;
+  cursor: pointer;
+  left: 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+.delet {
+  background-color: rgb(113, 84, 255);
+  border: none;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  z-index: 1;
+  left: 20px;
+}
+
+.carts-wrapper {
+  width: 100%;
+  display: flex;
+  .carts_card_left {
+    position: relative;
+    width: 98%;
+    input {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #1d1d1d;
+      background: #fff;
+      cursor: pointer;
+      position: absolute;
+      margin-top: 20px;
+      left: 15px;
+      transition: 0.4s linear ease-in-out;
+    }
+
+    .card_card {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgb(215, 215, 217);
+      align-items: center;
+      .img_card {
+        width: 120px;
+        height: 150px;
+        margin: 20px 30px 20px 6%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .dec_card {
+        width: 82%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .top_dec {
+          width: 100%;
+          font-family: Roboto;
+          margin-top: -50px;
+          font-weight: 700px;
+          font-size: 18px;
+          margin-bottom: -20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .delete {
+            display: flex;
+            align-items: center;
+            p {
+              font-family: Roboto;
+              font-size: 15px;
+              padding-left: 10px;
+            }
+          }
+        }
+        .bottom_dec {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-top: 20px;
+          position: relative;
+          .count {
+            width: 130px;
+            height: 40px;
+            position: absolute;
+            font-family: Roboto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 8px;
+            border: 1px solid rgb(215, 215, 217);
+            left: 55%;
+            button {
+              height: 100%;
+              width: 40px;
+              font-size: 22px;
+              border: none;
+              outline: none;
+              border-radius: 8px;
+              background-color: white;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              opacity: 0.8;
+            }
+          }
+          .name {
+            font-family: Roboto;
+            color: rgba(0, 0, 0, 0.441);
+            font-size: 16px;
+            span {
+              color: rgb(7, 7, 7);
+            }
+          }
+          .narxone {
+            h3 {
+              font-family: Roboto;
+              color: rgba(0, 0, 0, 0.847);
+              padding-bottom: 5px;
+              padding-top: 10px;
+            }
+            s {
+              font-family: Roboto;
+              color: rgba(0, 0, 0, 0.502);
+              padding-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.cards_w_b {
+  width: 70%;
+  border: 1px solid rgb(215, 215, 217);
+  margin-top: 100px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+.cards_wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.carts_card_right {
+  width: 30%;
+  height: 250px;
+  margin-top: 100px;
+  border: 1px solid rgb(215, 215, 217);
+  border-radius: 8px;
+  h4 {
+    font-family: Roboto;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: rgb(54, 54, 57);
+  }
+  .mahsulot {
+    width: 86%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #fff;
+    color: black;
+    padding-top: 35px;
+  }
+  .time {
+    width: 86%;
+    margin: 0 auto;
+    height: 25px;
+    border: 1px solid rgb(111, 0, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(132, 38, 255);
+    border-radius: 3px;
+    font-family: Roboto;
+    font-size: 13px;
+    margin-top: 35px;
+  }
+
+  .rasmiy {
+    width: 85%;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(111, 0, 255);
+    justify-content: space-between;
+    font-family: Roboto;
+    color: white;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 35px;
+  }
+}
+.not-product {
+  width: 100%;
+  height: 400px;
+  padding-top: 20px;
+  div {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    img {
+      width: 170px;
+      height: 170px;
+      display: block;
+      margin: 0 auto;
+    }
+    h3 {
+      font-size: 20px;
+      font-family: Roboto;
+      text-align: center;
+      padding-top: 20px;
+    }
+    p {
+      font-family: Roboto;
+      font-size: 15px;
+      text-align: center;
+      padding-top: 10px;
+    }
+    button {
+      background-color: rgb(111, 0, 255);
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+      font-family: Inter;
+      font-size: 0.875rem;
+      font-weight: 500;
+      height: 38px;
+      margin-top: 16px;
+      padding: 7px 14px;
+      text-decoration: none;
+      font-family: Roboto;
+      display: block;
+      margin: 0 auto;
+      margin-top: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .cards_wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-top: 0;
+    .cards_w_b {
+      margin-right: 0;
+      width: 100%;
+      .carts_card_left {
+        width: 98%;
+      }
+    }
+    .carts_card_right {
+      width: 100%;
+      .mahsulot {
+        width: 96.5%;
+      }
+      .time {
+        width: 96.5%;
+      }
+      .total {
+        width: 96.5%;
+      }
+    }
+  }
+  .mah {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .not-product {
+    margin-bottom: -50px;
+    div {
+      width: 100%;
+    }
+  }
+
+  .cards_wrapper {
+    margin-top: 100px;
+    .cards_w_b {
+      margin-top: 80px;
+      .carts_card_left {
+        .card_card {
+          .dec_card {
+            .top_dec {
+              p {
+                font-size: 14px;
+              }
+            }
+            .bottom_dec {
+              .name {
+                font-size: 15px;
+              }
+              .narxone {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .mah {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .cards_wrapper {
+    .cards_w_b {
+      .carts_card_left {
+        .card_card {
+          height: 210px;
+          .dec_card {
+            .top_dec {
+              .delete {
+                position: absolute;
+                bottom: 20px;
+              }
+            }
+            .bottom_dec {
+              .count {
+                top: 90px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .delet {
+    left: 90%;
+  }
+  .add {
+    left: 88.8%;
+  }
+  .carts-wrapper {
+    .carts_card_left {
+      input {
+        left: 85%;
+        position: absolute;
+      }
+    }
+  }
+  .mah {
+    font-size: 25px;
+  }
+
+  .cards_wrapper {
+    .cards_w_b {
+      .carts_card_left {
+        .card_card {
+          width: 100%;
+          height: 210px;
+          .dec_card {
+            .top_dec {
+              .delete {
+                position: absolute;
+                bottom: 20px;
+                left: 30%;
+              }
+            }
+            .bottom_dec {
+              display: grid;
+              .count {
+                top: 90px;
+                width: 100px;
+
+                left: 40%;
+              }
+              .name {
+                font-size: 13px;
+              }
+              .narxone {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .delet {
+    left: 90%;
+  }
+  .add {
+    left: 88.5%;
+  }
+}

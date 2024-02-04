@@ -1,0 +1,118 @@
+.slider-product-w {
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.swiper {
+  height: 100% !important;
+}
+
+.slider-product-w {
+  .swiper {
+    .swiper-wrapper {
+      .swiper-slide {
+        width: auto !important;
+        margin-right: 20px !important;
+      }
+    }
+
+    .swiper-pagination {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1165px) {
+  .slider-product-w {
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          width: auto !important;
+          margin-right: 20px !important;
+        }
+        .swiper-slide:nth-last-child(-n + 2) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .slider-product-w {
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide:nth-last-child(-n + 3) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  .slider-product-w {
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide:nth-last-child(-n + 4) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .slider-product-w {
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide:nth-last-child(-n + 5) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .slider-product-w {
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          .wrr {
+            .lik {
+              right: 20px;
+              top: 0;
+            }
+            .liki {
+              right: 20px;
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .slider-product-w {
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide:nth-last-child(-n + 6) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 407px) {
+  .slider-product-w {
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide:nth-last-child(-n + 6) {
+          display: block;
+        }
+      }
+    }
+  }
+}

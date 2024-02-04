@@ -1,0 +1,256 @@
+.scrol {
+  width: 1250px;
+  height: 408px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  overflow: hidden;
+  background-color: rgb(245, 247, 250);
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.scrrol {
+  width: 95%;
+  background-color: #44157f;
+  height: 416px;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.scrrol1 {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+.imgscrol img {
+  width: 1250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.imgscrol {
+  display: flex;
+  transition: 0.4s;
+}
+
+.scrrol {
+  width: 1250px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  overflow: hidden;
+  background-color: rgb(245, 247, 250);
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.mySwiper1 {
+  margin-bottom: -4px;
+}
+
+.swiper-pagination-bullet {
+  width: 100px !important;
+  height: 100px !important;
+  background-color: #44157f !important;
+  z-index: 100000;
+  top: 0;
+}
+
+.swiper-pagination {
+  width: 100% !important;
+  height: 10px !important;
+  position: absolute;
+  z-index: 1;
+  bottom: 10px !important;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination > .swiper-pagination-bullet {
+  width: 6px !important;
+  height: 6px !important;
+  background-color: rgba(255, 255, 255, 0.623) !important;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: rgb(175, 110, 255) !important;
+}
+.swiper-button-next {
+  position: absolute;
+  margin-left: -60px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 21px;
+  background-color: #ddd0ff;
+  color: #6d608f;
+  cursor: pointer;
+}
+swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 20px;
+}
+.swiper-button-prev:after {
+  font-size: 20px;
+}
+.swiper-button-prev {
+  position: absolute;
+  margin-left: 20px;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 21px;
+  background-color: #c596ff;
+  color: #44157f;
+  cursor: pointer;
+}
+
+.load {
+  width: 300px;
+  height: 100%;
+  background-color: rgba(236, 240, 247, 0.514);
+  transform: rotate(3deg);
+  animation: 1s loading infinite linear;
+  position: absolute;
+  margin-left: -50%;
+  filter: blur(40px);
+  border-radius: 10px;
+}
+
+@keyframes loading {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 150%;
+  }
+}
+
+/* mobilne */
+
+@media screen and (max-width: 1280px) {
+  .scrol {
+    width: 95%;
+  }
+  .scrrol1 {
+    width: 95%;
+    display: block;
+  }
+
+  .scrrol {
+    width: 95%;
+    height: auto;
+  }
+
+  .imgscrol img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: grid;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .scrol {
+    height: 610px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .scrol {
+    height: 535px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .scrol {
+    height: 470px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .scrol {
+    margin-top: 60px;
+  }
+  .scrol {
+    height: 430px;
+  }
+  .scrrol {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .scrol {
+    height: 380px;
+  }
+  .right {
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  .left {
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+    margin-left: -50px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .scrol {
+    height: 360px;
+  }
+}
+
+@media screen and (max-width: 605px) {
+  .scrol {
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .scrol {
+    height: 290px;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .scrol {
+    height: 260px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .scrol {
+    height: 240px;
+  }
+
+  .right {
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
+  }
+  .left {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 408px) {
+  .scrol {
+    height: 220px;
+  }
+}

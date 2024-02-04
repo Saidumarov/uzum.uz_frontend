@@ -1,0 +1,245 @@
+.sign-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.inn.activ {
+  border-color: red;
+}
+.inn {
+  border-color: #e0e0e0;
+}
+
+.sign-left {
+  width: 40%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  width: 40%;
+  min-width: 100px;
+  min-height: 100%;
+  background: #e0e0e0 url("../assets/imgs/sledrImgs/sign_.jpg");
+  -webkit-filter: saturate(2);
+  filter: saturate(2);
+  background-size: cover;
+  background-position: 50%;
+  display: initial;
+}
+.h1-for {
+  font-family: sans-serif;
+}
+
+.sign-right {
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-left span svg {
+  width: 110px;
+  height: 110px;
+  cursor: pointer;
+  margin: 0px 0 0 100px;
+}
+.ruyhat {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.foorm {
+  width: 100%;
+  margin: 0 auto;
+  height: 400px;
+}
+.foorm input {
+  display: block;
+  width: 400px;
+  height: 50px;
+  font-size: 17px;
+  margin-top: 5px;
+  border: 1px solid #d1d2d3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 25px;
+  outline: none;
+}
+.foorm label {
+  font-family: sans-serif;
+  opacity: 0.8;
+  margin-top: 20px;
+  display: block;
+}
+
+.davomet {
+  width: 380px;
+  height: 42px;
+  display: block;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(232, 72, 72);
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: sans-serif;
+  color: white;
+  font-size: 16px;
+}
+
+.text {
+  font-family: sans-serif;
+  font-size: 14px;
+  opacity: 0.8;
+  text-align: center;
+  width: 400px;
+  padding-top: 20px;
+}
+
+.kir {
+  width: 80px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  background-color: rgb(232, 72, 72);
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.kir1 {
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  background-color: rgb(232, 72, 72);
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.ruyhat-w {
+  width: 100%;
+}
+
+.loading-btn,
+.loading-btn1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border-top: 3px solid rgba(255, 255, 255, 0.817);
+  border-bottom: 3px solid rgb(232, 72, 72);
+  border-right: 3px solid rgba(255, 255, 255, 0.817);
+  border-left: 3px solid rgb(232, 72, 72);
+  animation: loadingbtn 0.3s linear infinite;
+  display: block;
+  margin: 0 auto;
+}
+.loading-btn1 {
+  border-top: 3px solid rgba(255, 255, 255, 0.68);
+  border-bottom: 3px solid white;
+  border-right: 3px solid rgba(255, 255, 255, 0.68);
+  border-left: 3px solid white;
+  animation: loadingbtn 0.3s linear infinite;
+}
+
+@keyframes loadingbtn {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* media */
+
+@media screen and (max-width: 890px) {
+  .sign-right {
+    width: 100%;
+  }
+
+  .sign-left {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .ruyhat {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .kir {
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .ruyhat {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .kir {
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .ruyhat {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .kir {
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .ruyhat {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+
+  .kir {
+    top: 30px;
+  }
+  .foorm {
+    width: 100%;
+    margin: 0 auto;
+    height: 400px;
+  }
+  .foorm input {
+    display: block;
+    width: 100%;
+  }
+  .foorm label {
+    width: 100%;
+  }
+
+  .davomet {
+    width: 95%;
+    height: 42px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .text {
+    width: 100%;
+  }
+  .h1-for {
+    font-size: 23px;
+  }
+}

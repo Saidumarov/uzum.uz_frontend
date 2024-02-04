@@ -1,0 +1,414 @@
+.bcon {
+  width: 1250px;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+}
+
+.bot {
+  width: 1250px;
+  height: 1px;
+  background-color: #1f1f266d;
+
+  position: relative;
+  margin: 0 auto;
+  margin-top: -20px;
+}
+
+.ap1,
+.go1 {
+  display: none;
+}
+
+.bot1 {
+  width: 1250px;
+  height: 50px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.pbb {
+  display: flex;
+}
+
+.bp1,
+.bp2 {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.bp2 {
+  padding-left: 30px;
+}
+
+.bp3 {
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.b1 {
+  width: 200px;
+  height: 300;
+  margin-left: 120px;
+  color: #1f1f26;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.b1 p {
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.b2 {
+  margin-left: 100px;
+  font-family: sans-serif;
+  font-size: 15px;
+  margin-top: 3px;
+}
+
+.p {
+  display: flex;
+  margin-top: 20px;
+  height: 40px;
+  align-items: center;
+  font-size: 13.5px;
+  cursor: pointer;
+}
+
+.b3 {
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.imgg {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.im1 {
+  width: 45px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.go,
+.ap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.im2 {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+.im3 {
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+
+  cursor: pointer;
+}
+
+.im4 {
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.no {
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .bcon {
+    width: 95%;
+  }
+  .bot1,
+  .bot {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .bcon {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto auto;
+  }
+
+  .b1 {
+    width: 100%;
+    height: 300;
+    margin-left: 0px;
+    padding: 0;
+  }
+
+  .b2 {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 38%;
+  }
+
+  .bot {
+    margin-top: 150px;
+  }
+
+  .bot1 {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .bp1,
+  .bp2 {
+    text-align: center;
+    padding-top: 15px;
+  }
+  .pbb {
+    display: grid;
+  }
+  .bp3 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .tepaga {
+    display: none;
+  }
+  .tepaga.activ {
+    display: none;
+  }
+}
+@media screen and (max-width: 780px) {
+  .bcon {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .bcon {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto;
+  }
+
+  .b2 {
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 38%;
+    right: 30px;
+  }
+
+  #tt {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .no {
+    display: block;
+    padding-top: 20px;
+  }
+  .vp.active {
+    height: 150px;
+  }
+  .vp.active1 {
+    height: 150px;
+  }
+  .vp.active2 {
+    height: 150px;
+  }
+
+  .no1 {
+    display: none;
+  }
+
+  .bcon {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+  }
+
+  .b2 {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .b1 {
+    text-align: center;
+  }
+
+  #tt {
+    margin-top: 5px;
+  }
+
+  .hr {
+    width: 90%;
+    height: 1px;
+    background-color: rgba(31, 31, 38, 0.363);
+    position: absolute;
+    left: 5%;
+  }
+
+  .vp {
+    height: 1px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .sotuv {
+    cursor: pointer;
+  }
+  .noimg {
+    position: absolute;
+    margin-top: 8px;
+    transition: 0.3s;
+    /* width: 30px; */
+  }
+  .noimg.active {
+    transform: rotate(180deg);
+  }
+
+  .imgg {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .im1 {
+    width: 50px;
+    height: 60px;
+    cursor: pointer;
+    margin-left: 4px;
+  }
+
+  .im2 {
+    width: 50px;
+    height: 58px;
+    margin-top: 3px;
+    cursor: pointer;
+    margin-left: 12px;
+  }
+
+  .im3 {
+    width: 50px;
+    height: 52px;
+    margin-top: 3px;
+    cursor: pointer;
+  }
+
+  .im4 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .b3 p {
+    font-size: 14px;
+    padding-top: 50px;
+  }
+
+  .p {
+    display: block;
+  }
+
+  .go {
+    width: 150px;
+    height: 40px;
+    background-color: #1f1f26;
+    border-radius: 8px;
+    color: white;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 10px;
+    display: none;
+  }
+
+  .ap {
+    width: 150px;
+    height: 40px;
+    background-color: #1f1f26;
+    border-radius: 8px;
+    color: white;
+    margin-left: 10px;
+    display: none;
+  }
+
+  .ap1,
+  .go1 {
+    display: block;
+  }
+
+  .go1 {
+    margin-top: 8px;
+  }
+  .ap p {
+    padding-left: 7px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .go p {
+    padding-left: 10px;
+  }
+
+  .bot1 {
+    margin-top: 300px;
+  }
+  .bot {
+    display: none;
+  }
+
+  .bp1 {
+    padding-left: 33px;
+  }
+}
+
+.tepaga {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 35px;
+  bottom: 0px;
+  border-radius: 50%;
+  display: flex;
+  font-size: 28px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.tepaga.activ {
+  bottom: 60px;
+  opacity: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}

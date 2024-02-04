@@ -1,0 +1,509 @@
+.sitebar-page {
+  width: 200px;
+  height: 100vh;
+  background-color: rgb(44, 49, 56);
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+}
+.profil-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgb(242, 242, 242);
+}
+.title-mahsulot {
+  font-family: sans-serif;
+  font-size: 25px;
+  padding-left: 230px;
+  padding-top: 30px;
+  opacity: 0.8;
+}
+.bosh-meyu {
+  display: none;
+}
+.tizm1 {
+  display: none;
+}
+.logo-acount {
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.562);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
+
+.user-bottom {
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.664);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  cursor: pointer;
+}
+
+.right-bar {
+  width: 20%;
+  height: 100%;
+  padding-top: 12px;
+  padding-left: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+  div {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.562);
+    margin-top: 6px;
+  }
+}
+.right-bar:hover {
+  background-color: rgb(36, 40, 46);
+}
+
+.acc {
+  width: 100%;
+}
+.user-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  .name-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(104, 155, 232);
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    color: white;
+  }
+  p {
+    font-size: 15px;
+    color: white;
+    padding-left: 5px;
+    font-family: sans-serif;
+  }
+}
+
+.user-img:hover {
+  background-color: rgb(36, 40, 46);
+}
+::-webkit-scrollbar {
+  transition: 0.3s all ease;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(174, 168, 168);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slect {
+  width: 450px;
+  height: 45px;
+  margin-left: 20px;
+  background-color: rgb(245, 247, 250);
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding-left: 25px;
+  outline: none;
+
+  option {
+    outline: none;
+  }
+}
+
+.mahsulot-kiritish {
+  width: 1000px;
+  height: 90vh;
+  margin: 0 auto;
+  padding-top: 90px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  .mahsulot-item {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+  .foorm-input-w {
+    display: grid;
+    grid-template-columns: auto auto;
+    .input-product {
+      width: 100%;
+      height: 100%;
+      .form-profil-label {
+        padding-left: 30px;
+        font-family: sans-serif;
+        color: rgba(0, 0, 0, 0.842);
+      }
+      .form-control {
+        font-size: 18px;
+        border: none;
+        width: 450px;
+        height: 45px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        border: 1px solid #e7e8e3;
+        outline: none;
+        background: #fff;
+        margin-top: 10px;
+        font-family: Roboto;
+        padding-left: 25px;
+        margin-top: 10px;
+        margin-left: 20px;
+        background-color: rgb(245, 247, 250);
+        margin-top: 5px;
+        margin-bottom: 25px;
+        box-sizing: border-box;
+      }
+      input[type="number"]::-webkit-outer-spin-button,
+      input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+    }
+  }
+}
+
+.btn-form {
+  position: absolute;
+  bottom: 0;
+  width: 130px;
+  height: 45px;
+  background-color: rgb(26, 135, 84);
+  right: 20px;
+  top: 18px;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+.btn-form1 {
+  position: absolute;
+  bottom: 0;
+  width: 130px;
+  height: 45px;
+  background-color: rgb(13, 109, 252);
+  right: 180px;
+  top: 18px;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.nav-profil {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.142);
+}
+
+#last {
+  height: 100px;
+  outline: none;
+  font-family: sans-serif;
+  padding: 10px 0 0 20px;
+  resize: none;
+  border-radius: 8px;
+}
+
+.mahsulot {
+  width: 100%;
+  height: 40px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.717);
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(44, 49, 56);
+  transition: 0.2s;
+}
+.mahsulot:hover {
+  background-color: rgb(36, 40, 46);
+}
+
+.modal-profil-bot {
+  width: 220px;
+  height: 80px;
+  background-color: white;
+  position: absolute;
+  left: -100%;
+  bottom: 40px;
+  border-radius: 8px;
+  opacity: 0.9;
+  transition: 0.4s;
+  z-index: 3;
+  box-shadow: 1px 6px 5px rgba(0, 0, 0, 0.45);
+
+  hr {
+    display: block;
+    line-height: 0;
+    opacity: 0.9;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    margin-top: 6px;
+  }
+  p {
+    font-family: sans-serif;
+    font-size: 16px;
+    padding-top: 15px;
+    padding-left: 10px;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}
+
+.modal-profil-bot.active {
+  left: 210px;
+}
+.x-bar-ac {
+  display: none;
+}
+
+// media
+
+@media screen and (max-width: 1245px) {
+  .sitebar-ac1 {
+    transition: 0.3s;
+    position: fixed;
+    left: -100%;
+    z-index: 3;
+  }
+  .sitebar-ac1.activ {
+    left: 0%;
+  }
+  .x-bar-ac {
+    cursor: pointer;
+    display: block;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+  .btn-form {
+    right: 100px;
+  }
+  .btn-form1 {
+    right: 250px;
+  }
+  .profil-wrapper {
+    .nav-profil {
+      .title-mahsulot {
+        padding-left: 20px;
+        width: 1000px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .profil-wrapper {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .title-mahsulot {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .mahsulot-kiritish {
+    width: 100%;
+    height: 100vh;
+    .foorm-input-w {
+      display: grid;
+      grid-template-columns: auto;
+      .input-product {
+        width: 100%;
+        height: 100%;
+        .form-profil-label {
+          padding-left: 30px;
+          font-family: sans-serif;
+          color: rgba(0, 0, 0, 0.842);
+        }
+        .form-control {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .btn-form {
+    right: 100px;
+    position: relative;
+    margin-left: 150px;
+  }
+  .btn-form1 {
+    right: 100px;
+    position: relative;
+    margin-left: 300px;
+    top: 0;
+    margin-top: -27px;
+  }
+  .slect {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .title-mahsulot {
+    padding-left: 0px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 10px;
+  }
+  .nav-profil {
+    h1 {
+      font-size: 20px;
+    }
+  }
+  .sitebar-page {
+    .mahsulot {
+      font-size: 15px;
+    }
+  }
+}
+@media screen and (max-width: 460px) {
+  .mahsulot-kiritish {
+    .foorm-input-w {
+      .input-product {
+        .form-control {
+          width: 90%;
+          height: 50px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .bosh-meyu {
+    display: block;
+    padding-left: 29px;
+  }
+  .tizm1 {
+    display: block;
+    padding-left: 30px;
+  }
+  .tizm {
+    display: none;
+  }
+  .bosh-menyu-w {
+    display: none;
+  }
+  .modal-profil-bot {
+    width: 100px;
+    height: 80px;
+  }
+
+  .btn-form {
+    right: 100px;
+    position: relative;
+    margin-left: 150px;
+  }
+  .mahsulot-kiritish {
+    .foorm-input-w {
+      grid-template-columns: auto;
+      #input-product {
+        width: 90%;
+        height: 100%;
+      }
+    }
+  }
+  .isclec {
+    width: 100%;
+    .slect {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .mahsulot-kiritish {
+    .foorm-input-w {
+      #input-product {
+        width: 90%;
+        height: 100%;
+        .form-control {
+          width: 85%;
+        }
+      }
+    }
+  }
+  .isclec {
+    width: 100%;
+    .slect {
+      width: 75%;
+    }
+  }
+}
+@media screen and (max-width: 370px) {
+  .mahsulot-kiritish {
+    .foorm-input-w {
+      #input-product {
+        width: 90%;
+        height: 100%;
+        .form-control {
+          width: 80%;
+        }
+      }
+    }
+  }
+  .isclec {
+    width: 100%;
+    .slect {
+      width: 70%;
+    }
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .btn-form {
+    margin-left: 120px;
+  }
+  .btn-form1 {
+    margin-top: -27px;
+    margin-left: 270px;
+  }
+}

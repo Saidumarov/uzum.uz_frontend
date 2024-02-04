@@ -1,0 +1,78 @@
+.not-like {
+  width: 1250px;
+  height: 300px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.196);
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  div {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    .hearts {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin: 0 auto;
+      display: block;
+      margin-top: 80px;
+    }
+    h3 {
+      font-size: 20px;
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 20px;
+    }
+    p {
+      font-family: sans-serif;
+      font-size: 15px;
+      text-align: center;
+      padding-top: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .not-like {
+    width: 1100px;
+  }
+}
+
+@media screen and (max-width: 1133px) {
+  .not-like {
+    width: 1040px;
+  }
+}
+
+@media screen and (max-width: 1062px) {
+  .not-like {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 933px) {
+  .not-like {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .not-like {
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: -10px;
+    div {
+      width: 100%;
+    }
+  }
+  .wishis-w {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .not-like {
+    margin-bottom: 80px;
+  }
+}

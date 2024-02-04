@@ -1,0 +1,243 @@
+.notfount_Page {
+  padding-top: 60px;
+  h1 {
+    text-align: center;
+    font-size: 35px;
+    font-family: sans-serif;
+    opacity: 0.5;
+  }
+  p {
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding-top: 20px;
+    text-decoration: underline;
+  }
+}
+
+.profil-card {
+  width: 1100px;
+  height: 98vh;
+  margin: 0 auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-top: 100px;
+  position: relative;
+  display: flex;
+  .card-profil {
+    width: 240px;
+    height: 500px;
+    background-color: #ffffff70;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    overflow: hidden;
+    transition: 0.5s;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    cursor: pointer;
+    .card-top-profil {
+      width: 100%;
+      height: 50%;
+      border-radius: 8px;
+      .swiper-button-next {
+        display: none;
+      }
+      .swiper-button-prev {
+        display: none;
+      }
+      img {
+        width: 100%;
+        height: 270px;
+        object-fit: cover;
+        border-radius: 8px;
+        position: relative;
+        z-index: 0;
+      }
+      img:active {
+        cursor: grabbing;
+      }
+    }
+  }
+}
+
+.card-bootom-profil {
+  width: 100%;
+  height: 40%;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  padding-top: 20px;
+  p {
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+  // .sotuv-pro {
+  // }
+  .dec {
+    padding-bottom: 5px;
+    font-size: 14px;
+    width: 100%;
+  }
+  .oyiga-pro {
+    background-color: rgb(255, 255, 0);
+    margin-left: 5px;
+    padding: 2px;
+    border-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .narx-no-pro {
+    font-size: 13px;
+  }
+  // .dona {
+  // }
+  .btn-ww {
+    position: absolute;
+    width: 100%;
+    bottom: 6px;
+    height: auto;
+  }
+  .btn-wr {
+    position: relative;
+    width: 100%;
+    display: flex;
+    .btn1 {
+      width: 60px;
+      background-color: rgb(232, 72, 72);
+      border-radius: 8px;
+      color: white;
+      border: none;
+      margin-left: 40px;
+      outline: none;
+      cursor: pointer;
+      svg {
+        fill: white;
+      }
+    }
+
+    .btnn {
+      font-family: sans-serif;
+      width: 60px;
+      height: 38px;
+      border-radius: 8px;
+      margin-left: 40px;
+      border: none;
+      outline: none;
+      background-color: rgb(255, 193, 8);
+      cursor: pointer;
+      svg {
+        fill: white;
+      }
+    }
+  }
+}
+
+.paddig {
+  width: 100%;
+  height: 50px;
+  background-color: antiquewhite;
+}
+.not-mahsulot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 300px;
+    padding-top: 150px;
+  }
+  h2 {
+    font-family: sans-serif;
+    font-size: 29px;
+  }
+}
+
+// media
+
+@media screen and (max-width: 1100px) {
+  .profil-card {
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 550px) {
+  .not-mahsulot {
+    img {
+      width: 250px;
+      padding-top: 150px;
+    }
+    h2 {
+      font-family: sans-serif;
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .profil-card {
+    .card-profil {
+      margin-left: 25%;
+    }
+  }
+  .not-mahsulot {
+    width: 100%;
+    img {
+      width: 200px;
+      padding-top: 150px;
+    }
+    h2 {
+      font-family: sans-serif;
+      font-size: 18px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .profil-card {
+    .card-profil {
+      margin-left: 20%;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .profil-card {
+    .card-profil {
+      margin-left: 15%;
+    }
+  }
+  .not-mahsulot {
+    display: grid;
+    justify-content: center;
+    img {
+      width: 200px;
+      padding-top: 150px;
+      margin: 0 auto;
+      display: block;
+      margin-left: 90px;
+    }
+    h2 {
+      font-family: sans-serif;
+      font-size: 18px;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+      padding-left: 90px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profil-card {
+    .card-profil {
+      margin-left: 10%;
+    }
+  }
+}

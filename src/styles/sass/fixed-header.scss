@@ -1,0 +1,88 @@
+.fixed-header {
+  width: 100%;
+  height: 65px;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  border-top: 1px solid rgba(0, 0, 0, 0.311);
+  display: flex;
+  .fixed-header-item {
+    width: 20%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    svg {
+      display: block;
+      margin: 0 auto;
+      width: 35px;
+      height: 35px;
+      fill: #8b8e99;
+    }
+    p {
+      font-family: sans-serif;
+      color: rgb(166, 169, 179);
+    }
+    span {
+      position: absolute;
+      margin-left: 35px;
+      border-radius: 50px;
+      width: 26px;
+      height: 26px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: sans-serif;
+      font-size: 13px;
+    }
+  }
+  .fixed-header-item.active {
+    div {
+      svg {
+        fill: rgb(111, 0, 255);
+      }
+    }
+    p {
+      color: rgb(111, 0, 255);
+    }
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .fixed-header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .fixed-header {
+    .fixed-header-item {
+      svg {
+        width: 28px;
+        height: 28px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .fixed-header {
+    .fixed-header-item {
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+}

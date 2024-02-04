@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState, useRef } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import "../../styles/chilla.css";
 import baho from "../../assets/icons/savg/baho.svg";
@@ -27,10 +27,9 @@ const AboutCards = () => {
   );
   const [bloc, setBloc] = useState(localStorage.getItem(`bloc-${id}`) || "");
 
-  const [buttonColor, setButtonColor] = useState(
-    localStorage.getItem("buttonColor") || "#959cb9"
-  );
-  const { _id, name, price, old_price, per_month, piece, hafta, imgags, dec } =
+  const buttonColor = localStorage.getItem("buttonColor") || "#959cb9";
+
+  const { _id, name, price, old_price, per_month, piece, imgags, dec } =
     productData;
 
   const imageList = productData?.imgags || [];

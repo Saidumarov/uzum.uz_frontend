@@ -8,6 +8,7 @@ function Wishes() {
   const { setFixed, hig, setHig } = useContext(Modal);
   const [wishes, setWishes] = useState([]);
   const [loading, setLoading] = useState(true);
+  
   useEffect(() => {
     setFixed(true);
     let wishes = localStorage.getItem("likedProducts");

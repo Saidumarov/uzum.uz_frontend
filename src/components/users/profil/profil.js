@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import myAxios from "../../../api/index";
 import { useQuery } from "react-query";
 import { toast } from "react-toastify";
@@ -62,12 +62,7 @@ function Profil() {
     const response = await myAxios.get("product");
     return response?.data;
   };
-  const {
-    data: dataResponse,
-    isLoading,
-    isError,
-    error,
-  } = useQuery("posts", fetchPost);
+  const { data: dataResponse, isLoading } = useQuery("posts", fetchPost);
 
   if (isLoading) {
     return <Loading />;

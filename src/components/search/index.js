@@ -6,7 +6,7 @@ import { useQuery } from "react-query";
 function Search() {
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState([]);
-  const [value, setValue] = useState();
+  // const [value, setValue] = useState();
   const { setLoading, setActiveItem, active1, setActive1 } = useContext(Modal);
   const navigat = useNavigate();
 
@@ -28,7 +28,7 @@ function Search() {
 
   const handelChange = (value) => {
     const trimmedValue = value.trim();
-    setValue(trimmedValue);
+    // setValue(trimmedValue);
     const res = filter?.filter((el) =>
       el?.dec?.toLowerCase().includes(trimmedValue)
     );

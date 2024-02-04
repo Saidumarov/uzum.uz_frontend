@@ -15,12 +15,7 @@ function Category() {
     const response = await myAxios.get("product");
     return response?.data;
   };
-  const {
-    data: dataResponse,
-    isLoading,
-    isError,
-    error,
-  } = useQuery("posts", fetchPost);
+  const { data: dataResponse, isLoading } = useQuery("posts", fetchPost);
 
   useEffect(() => {
     let type = localStorage.getItem("type");

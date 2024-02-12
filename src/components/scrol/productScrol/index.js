@@ -1,19 +1,22 @@
+import { useRef } from "react";
 import "../../../styles/sass/slider-product.scss";
 import ProductCard from "../../market/products/product-card";
 function ProductScrol(product) {
   const { dataResponse, isLoading } = product?.products;
+  const carouselCardRef = useRef(null);
+  const scrollAmount = 249;
 
-  let carouselCard1 = document.getElementById("wrap1");
-  let scrollAmount_one = 249;
-
-  const next_one = () => {
-    carouselCard1.scrollLeft += scrollAmount_one;
+  const next = () => {
+    if (carouselCardRef.current) {
+      carouselCardRef.current.scrollLeft += scrollAmount;
+    }
   };
 
-  const prev_one = () => {
-    carouselCard1.scrollLeft -= scrollAmount_one;
+  const prev = () => {
+    if (carouselCardRef.current) {
+      carouselCardRef.current.scrollLeft -= scrollAmount;
+    }
   };
-
   return (
     <>
       {!isLoading ? (
@@ -41,10 +44,10 @@ function ProductScrol(product) {
           </h2>
           <button
             className="swiper-button-prev"
-            onClick={prev_one}
+            onClick={prev}
             id="prev"
           ></button>
-          <div className="slider-product-scrol" id="wrap1">
+          <div className="slider-product-scrol" ref={carouselCardRef}>
             <div className="slider-product-scrol_item">
               {dataResponse?.map((item, index) => {
                 if (item?.type === "kiyim") {
@@ -55,7 +58,7 @@ function ProductScrol(product) {
           </div>
           <button
             className="swiper-button-next"
-            onClick={next_one}
+            onClick={next}
             id="next"
           ></button>
         </div>

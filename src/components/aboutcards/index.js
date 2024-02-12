@@ -214,7 +214,6 @@ const AboutCards = () => {
   const prev = () => {
     carouselCard.scrollLeft -= scrollAmount;
   };
-
   return (
     <div>
       {productData ? (

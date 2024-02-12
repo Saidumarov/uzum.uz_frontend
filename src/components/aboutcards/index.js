@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import "../../styles/chilla.css";
+import "../../styles/sass/typeProduct.scss";
 import baho from "../../assets/icons/savg/baho.svg";
 import olovv from "../../assets/icons/savg/olov.svg";
 import haftaa from "../../assets/icons/imgs/hafta.png";
@@ -13,11 +14,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import axios from "axios";
+import ProductCard from "../market/products/product-card";
 const AboutCards = () => {
   const apiUrl = process.env.REACT_APP_API_URL;
   const { id } = useParams();
   const [count, setCount] = useState(1);
   const [productData, setProductData] = useState("");
+  const [typeData, setTypeData] = useState();
   const [isLoading, setIsLoading] = useState(true);
   const [imgs, setImgs] = useState([]);
   const [btn, setBtn] = useState(true);
@@ -29,7 +32,7 @@ const AboutCards = () => {
 
   const buttonColor = localStorage.getItem("buttonColor") || "#959cb9";
 
-  const { _id, name, price, old_price, per_month, piece, imgags, dec } =
+  const { _id, name, price, old_price, per_month, piece, imgags, dec, type } =
     productData;
 
   const imageList = productData?.imgags || [];
@@ -79,7 +82,6 @@ const AboutCards = () => {
     localStorage.setItem(`styl-${_id}`, "scale(1.1)");
     localStorage.setItem(`bloc-${_id}`, "block");
   };
-
   const handleDeleteLikedProduct = () => {
     const likedProductsArray =
       JSON.parse(localStorage.getItem("likedProducts")) || [];
@@ -129,7 +131,10 @@ const AboutCards = () => {
     const fetchProduct = async (Id) => {
       try {
         const response = await axios.get(`${apiUrl}product/${Id}`);
+        const typeRes = await axios.get(`${apiUrl}product`);
         const data = await response?.data;
+        const typeResdata = await typeRes?.data;
+        setTypeData(typeResdata);
         setProductData(data);
         setHig(false);
       } catch (error) {
@@ -196,6 +201,18 @@ const AboutCards = () => {
     let dataAll = dataa ? JSON?.parse(dataa) : null;
     setLegth(dataAll?.length);
     localStorage.setItem("pas", JSON.stringify(dataAll?.length));
+  };
+
+  // Horizontal Scrolling
+  let carouselCard = document.getElementById("wrap");
+  let scrollAmount = 249;
+
+  const next = () => {
+    carouselCard.scrollLeft += scrollAmount;
+  };
+
+  const prev = () => {
+    carouselCard.scrollLeft -= scrollAmount;
   };
 
   return (
@@ -428,6 +445,28 @@ const AboutCards = () => {
             </div>
           </div>
           <hr className="hh" />
+          <div className="type_product">
+            <h2>Oʻxshash mahsulotlar</h2>
+            <button
+              className="swiper-button-prev"
+              onClick={prev}
+              id="prev"
+            ></button>
+            <div className="type_product_scrol" id="wrap">
+              <div className="type_product_w">
+                {typeData?.map((el, index) => {
+                  if (el?.type === type) {
+                    return <ProductCard key={index} {...el} />;
+                  }
+                })}
+              </div>
+            </div>
+            <button
+              className="swiper-button-next"
+              onClick={next}
+              id="next"
+            ></button>
+          </div>
         </div>
       ) : (
         ""

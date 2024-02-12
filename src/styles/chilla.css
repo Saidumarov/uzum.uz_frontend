@@ -840,6 +840,8 @@ abbr span {
   font-family: sans-serif;
   font-size: 28px;
   padding-top: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .bb i {

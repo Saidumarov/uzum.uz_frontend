@@ -449,8 +449,12 @@
   width: 320px;
   height: 45px;
   display: block;
+  font-size: 18px;
   outline: none;
   border: 1px solid #d1d2d3;
+}
+.telinput::placeholder {
+  font-size: 18px;
 }
 
 .hbar1 {

@@ -27,6 +27,7 @@
   border-radius: 8px;
   transition: 0.3s;
   cursor: pointer;
+  color: black;
 }
 .yana-hom:hover {
   background-color: rgb(237, 239, 242);

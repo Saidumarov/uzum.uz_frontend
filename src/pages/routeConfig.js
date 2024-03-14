@@ -4,7 +4,9 @@ import CategoryPage from "./CategoryPage";
 import CheckoutPage from "./CheckoutPage";
 import Hompage from "./HomPage";
 import NotFoutPage from "./NotFound";
+import OrdersPage from "./OrdersPage";
 import { SignInRoute, ProfileRoute, AccountRoute } from "./Route/index";
+import SettingsPage from "./SettingsPage";
 import WishesPage from "./WishesPage";
 export const routes = [
   {
@@ -61,5 +63,15 @@ export const routes = [
     id: 10,
     path: "/checkout",
     element: <CheckoutPage />,
+  },
+  {
+    id: 11,
+    path: "/settings",
+    element: <SettingsPage />,
+  },
+  {
+    id: 12,
+    path: "/orders",
+    element: <OrdersPage />,
   },
 ];

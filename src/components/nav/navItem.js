@@ -22,8 +22,17 @@ const NavItme = () => {
     useContext(Modal);
   const [pass, setPass] = useState();
   const [product, setProduct] = useState();
+  const [profil, setprofil] = useState("Kirish");
+  const naviget = useNavigate();
+
+  let name = JSON.parse(localStorage.getItem("profilUser"));
+
   const login = () => {
-    setActive(!active);
+    if (!name) {
+      setActive(!active);
+    } else {
+      naviget("/settings");
+    }
   };
 
   const [addToCart, setAddToCart] = useState([]);
@@ -64,6 +73,15 @@ const NavItme = () => {
     setProduct(productAll);
     setPass(pasAll);
   }, [length]);
+
+  useEffect(() => {
+    if (name) {
+      setprofil("Profil");
+      if (name?.name !== "") {
+        setprofil(name?.name);
+      }
+    }
+  }, [name]);
 
   return (
     <div>
@@ -144,7 +162,7 @@ const NavItme = () => {
         <SearchPage />
         <div className="kirsh" onClick={login}>
           <img src={kirish} alt="" />
-          <p> Kirish</p>
+          <p> {profil}</p>
         </div>
         <Link to={"/wishes"}>
           <div className="sara">

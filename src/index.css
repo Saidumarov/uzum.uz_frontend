@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    width: 95%;
+  }
+}
+
+a {
+  outline: none;
+}
+button {
+  outline: none;
+}

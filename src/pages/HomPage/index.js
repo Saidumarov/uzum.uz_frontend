@@ -21,7 +21,7 @@ function Hompage() {
   });
 
   const fetchPost = async () => {
-    const response = await myAxios.get("prodsuct");
+    const response = await myAxios.get("product");
     return response?.data;
   };
   const {
